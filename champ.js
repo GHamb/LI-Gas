@@ -1,5 +1,5 @@
 
-fetch("http://ddragon.leagueoflegends.com/cdn/10.19.1/data/pt_BR/champion.json")
+fetch("https://ddragon.leagueoflegends.com/cdn/10.19.1/data/pt_BR/champion.json")
 
     .then(res => res.json())
     .then(objson => {
@@ -11,7 +11,7 @@ fetch("http://ddragon.leagueoflegends.com/cdn/10.19.1/data/pt_BR/champion.json")
         }
 
         $('#input_champ').change(function () {
-            fetch(`http://ddragon.leagueoflegends.com/cdn/10.19.1/data/pt_BR/champion/${$('#input_champ').val()}.json`)
+            fetch(`https://ddragon.leagueoflegends.com/cdn/10.19.1/data/pt_BR/champion/${$('#input_champ').val()}.json`)
 
                 .then(res => res.json())
                 .then(objson => {
@@ -37,7 +37,7 @@ fetch("http://ddragon.leagueoflegends.com/cdn/10.19.1/data/pt_BR/champion.json")
                         skn.push(camp.skins[skin].num)
                     }
                     $('#foto_champ').text('')
-                    var imgcm = $("<img>").attr('src', `http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${camp.id}_${skn[0]}.jpg`)
+                    var imgcm = $("<img>").attr('src', `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${camp.id}_${skn[0]}.jpg`)
                     $('#foto_champ').append(imgcm)
                     var maxskn = skn.length
                     var contador = 0
@@ -48,7 +48,7 @@ fetch("http://ddragon.leagueoflegends.com/cdn/10.19.1/data/pt_BR/champion.json")
                         if (contador != maxskn - 1) {
                             contador++
                             $('#foto_champ').text('')
-                            var mudaskn = $("<img>").attr('src', `http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${camp.id}_${skn[contador]}.jpg`)
+                            var mudaskn = $("<img>").attr('src', `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${camp.id}_${skn[contador]}.jpg`)
                             $('#foto_champ').append(mudaskn)
 
 
@@ -56,7 +56,7 @@ fetch("http://ddragon.leagueoflegends.com/cdn/10.19.1/data/pt_BR/champion.json")
                         } else {
                             contador = 0
                             $('#foto_champ').text('')
-                            var mudaskn = $("<img>").attr('src', `http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${camp.id}_${skn[contador]}.jpg`)
+                            var mudaskn = $("<img>").attr('src', `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${camp.id}_${skn[contador]}.jpg`)
                             $('#foto_champ').append(mudaskn)
 
 

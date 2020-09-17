@@ -1,4 +1,4 @@
-fetch("http://ddragon.leagueoflegends.com/cdn/10.19.1/data/pt_BR/item.json")
+fetch("https://ddragon.leagueoflegends.com/cdn/10.19.1/data/pt_BR/item.json")
     .then(res => res.json())
     .then(objson => {
         console.log(objson.data)
@@ -13,7 +13,7 @@ fetch("http://ddragon.leagueoflegends.com/cdn/10.19.1/data/pt_BR/item.json")
 
 function itemdesc(item) {
     $('#div2').text('')
-    fetch("http://ddragon.leagueoflegends.com/cdn/10.19.1/data/pt_BR/item.json")
+    fetch("https://ddragon.leagueoflegends.com/cdn/10.19.1/data/pt_BR/item.json")
         .then(res => res.json())
         .then(objson => {
             console.log(objson.data)
@@ -46,7 +46,7 @@ function itemdesc(item) {
                 upgitem = document.getElementById('into')
 
                 for (var pin = 0; pin < intos.length; pin++) {
-                    upgitem.innerHTML += `<a onclick="itemdesc(${intos[pin]})"><img  id="${intos[pin]}"width="45px" src="http://ddragon.leagueoflegends.com/cdn/10.19.1/img/item/${intos[pin]}.png" )"></a>`
+                    upgitem.innerHTML += `<a onclick="itemdesc(${intos[pin]})"><img  id="${intos[pin]}"width="45px" src="https://ddragon.leagueoflegends.com/cdn/10.19.1/img/item/${intos[pin]}.png" )"></a>`
 
 
                 }

@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    overflow: auto;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-image: url(https://eskipaper.com/images/lol-logo-wallpaper-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    color: white;
+    overflow: auto;
+}
+#infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    overflow: auto;
+
+}
+#selchamp{
+    margin: 50px 10px 0 10px;
+    height: 100vh;
+    width: 20vw;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+#selchamp label{
+    margin-left: 45px;
+}
+#selchamp select{
+    border-radius: 10px;
+    border: solid 2px black;
+    text-align: center;
+}
+
+#inpchamp{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 80px;
+    margin-left: 70px;
+    
+}
+#foto_champ{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 18vw;
+}
+#foto_champ img{
+    margin: 0 auto 0 auto;
+}
+
+#atributo{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    overflow: auto;
+    
+}
+#atributo input{
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#atr {
+    text-align: center;
+
+}
+
+#nivel{
+    width: 100px;
+    text-align: center;
+}
+
+#skill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    height: 100vh;
+    width: 60vw;
+    margin: 10px 0 20px 0;
+    font-size: 15px;
+    background-color:rgb(128, 128, 128,0.7);
+    overflow: auto;
+}
+
+#skill:hover{
+    color:goldenrod;
+}
+#psk{
+    border-top-style: none ;
+}
+.skl{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 40vw;
+    text-align: justify;
+    margin: 10px;
+    border-top: solid black 2px;
+
+}
+.skl img{
+    display: block;
+    width: 60px;
+    border-radius: 30px;
+    border:solid 2px black;
+    margin: 5px;
+}
+

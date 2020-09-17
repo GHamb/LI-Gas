@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+    width: 100vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+nav img{
+    width: 250px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://images4.alphacoders.com/600/thumb-1920-600528.png) ;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+
+}
+#nome0{
+    color: crimson;
+    font-size: 18px;
+}
+#nome0:hover{
+    font-size:25px;
+    color: darkcyan;
+}
+
+#cont_prin{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+#info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 15px;
+    background-color: rgb(255, 69, 0, 0.6);
+    border: solid goldenrod 2px;
+    width: 70vw;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+}
+#info img{
+    width: 95px;
+    border-radius: 20px;
+    margin:15px 0px;
+    border: solid black 2px;
+}
+#info p {
+    margin: 5px 0px;
+    color: black;
+    text-align: justify;
+} 
+#develop{
+    font-size: 12px;
+}
+#links_principal{
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+#links_principal a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(0, 0, 0,0.8);
+    border-radius: 10px;
+    border: solid goldenrod 1px;
+    color: rgb(218, 165, 32);
+    width: 100px;
+    text-align: center;
+    
+
+}
+#links_principal img{
+    width: 30px;
+    border-radius: 20px;
+    
+}
+#links_principal a:hover{
+    color: red;
+}
+
+@media(max-width:768px){
+    #info{
+        text-align: justify;
+        width: 70vw;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    #links_principal a{
+        width: 40px;
+        font-size: 10px;
+        text-align: center;
+    }
+    #develop{
+        text-align: center;
+        font-size: 11px;
+    }
+}
+
+@media(min-width:769px) and (max-width:1024px){
+    #info{
+        padding: 30px;
+        border-radius: 20px;
+        width: 70vw;
+
+    }
+    #develop{
+        font-size: 11px;
+    }
+}
+
+

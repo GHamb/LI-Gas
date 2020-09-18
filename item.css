@@ -24,6 +24,20 @@ a{
     height: 90vh;
     border-radius: 5px;
 }
+#back{
+    text-decoration: none;
+    background-color: rgb(102, 162, 180);
+    color: goldenrod;
+    border: solid 1px black;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 5px;
+ 
+}
+#back:hover{
+    background-color: black;
+    color: red;
+}
 #d1{
 
     overflow: auto;

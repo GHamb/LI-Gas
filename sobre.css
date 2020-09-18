@@ -18,6 +18,20 @@ a{
     align-items: center;
     justify-content: space-evenly;
 }
+#back{
+    text-decoration: none;
+    background-color: rgb(102, 162, 180);
+    color:black;
+    border: solid 1px black;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 5px;
+ 
+}
+#back:hover{
+    background-color: black;
+    color: red;
+}
 .divs{
     width: 40vw;
     height: 80vh;
